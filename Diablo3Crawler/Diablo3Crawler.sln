@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D3WPF", "D3WPF\D3WPF.csproj", "{F7675185-A510-468F-88A0-3726A66B13BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7675185-A510-468F-88A0-3726A66B13BD}.Debug|x86.ActiveCfg = Debug|x86
+		{F7675185-A510-468F-88A0-3726A66B13BD}.Debug|x86.Build.0 = Debug|x86
+		{F7675185-A510-468F-88A0-3726A66B13BD}.Release|x86.ActiveCfg = Release|x86
+		{F7675185-A510-468F-88A0-3726A66B13BD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {540F9F87-E1E8-4921-B65E-93597C828F8A}
+	EndGlobalSection
+EndGlobal
