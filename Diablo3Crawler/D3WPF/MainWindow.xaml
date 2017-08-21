@@ -4,6 +4,18 @@
                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                 Title="MainWindow" Height="350" Width="525">
         <Grid>
-                
-        </Grid>
+
+        <telerik:RadGridView x:Name="gridView" IsReadOnly="True" AutoGenerateColumns="False">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
+                                            Header="Name" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Build.Name}"
+                                            Header="Build" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Build.Class}"
+                                            Header="Class" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Slot}"
+                                            Header="Slot" />
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+    </Grid>
 </Window>

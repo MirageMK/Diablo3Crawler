@@ -18,14 +18,14 @@
     <PublishUrl>\\rystadenergy.com\Files\Users\aleksandar\Diablo3Crawler\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -73,14 +73,32 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Telerik.Pivot.Core">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Pivot.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Telerik.Windows.Controls">
-      <HintPath>..\lib\RCWPF\2017.2.614.45.NoXaml\Telerik.Windows.Controls.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Themes.Material">
-      <HintPath>..\lib\RCWPF\2017.2.614.45.NoXaml\Telerik.Windows.Themes.Material.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Telerik.Windows.Controls.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Controls.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Windows.Controls.GridView">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Controls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Input">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Controls.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Pivot">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Controls.Pivot.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF R2 2017\Binaries\WPF45\Telerik.Windows.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Themes.Windows8">
+      <HintPath>..\lib\RCWPF\2017.2.614.45.NoXaml\Telerik.Windows.Themes.Windows8.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -116,6 +134,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -203,6 +222,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\D3Core\D3Core.csproj">
+      <Project>{f074d60d-9079-4a50-b75c-653db118d499}</Project>
+      <Name>D3Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using D3Core;
 
 namespace D3WPF
 {
@@ -22,6 +23,8 @@ namespace D3WPF
         public MainWindow()
         {
             InitializeComponent();
+
+            this.gridView.ItemsSource = new IcyVeinsReader().GetAll();
         }
     }
 }
