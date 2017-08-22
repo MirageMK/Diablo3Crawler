@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using D3Core;
 using D3Core.Models;
+using D3Core.Readers;
 
 namespace D3Console
 {

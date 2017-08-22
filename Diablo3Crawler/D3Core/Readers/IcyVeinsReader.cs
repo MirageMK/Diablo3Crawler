@@ -8,7 +8,7 @@ using D3Core.Models;
 using HtmlAgilityPack;
 using log4net;
 
-namespace D3Core
+namespace D3Core.Readers
 {
     public class IcyVeinsReader
     {
@@ -45,14 +45,14 @@ namespace D3Core
                     {
                         build = new Build
                                 {
-                                    Name = buildHref.InnerText,
+                                    Name = buildHref.InnerText.Trim(),
                                     URL = buildHref.Attributes["href"].Value
                                 };
                     }
 
                     Item item = new Item
                                 {
-                                    Name = name,
+                                    Name = name.Trim(),
                                     Build = build,
                                     Slot = fullBuildName.Split('(')[1].Split(')')[0].Trim()
                                 };

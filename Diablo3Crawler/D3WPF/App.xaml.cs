@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
-using System.Linq;
 using System.Windows;
 
 namespace D3WPF
@@ -14,7 +12,8 @@ namespace D3WPF
     {
         public App()
         {
-           this.InitializeComponent();
+            log4net.Config.XmlConfigurator.Configure();
+            this.InitializeComponent();
         }
     }
 }
