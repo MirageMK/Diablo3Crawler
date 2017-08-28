@@ -9,9 +9,11 @@ namespace D3Core.Models
     public class Item: IEquatable<Item>, IEqualityComparer<Item>
     {
         public string Name { get; set; }
-        public string Slot { get; set; }
+        public string BuildSlot { get; set; }
         public Build Build { get; set; }
         public bool IsOwn => ItemStash.OwnedItems.Contains(Name);
+        public string URL { get; set; }
+        public string Slot { get; set; }
 
         public bool Equals(Item other)
         {

@@ -13,10 +13,12 @@
                                             Header="Build" />
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding Build.Class}"
                                             Header="Class" />
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Slot}"
-                                            Header="Slot" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding BuildSlot}"
+                                            Header="Build Slot" />
                 <telerik:GridViewDataColumn DataMemberBinding="{Binding IsOwn}"
                                             Header="Is Owned" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Slot}"
+                                            Header="Slot" />
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
