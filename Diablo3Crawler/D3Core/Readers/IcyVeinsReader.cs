@@ -50,11 +50,18 @@ namespace D3Core.Readers
 
                             using(WebClient client = new WebClient())
                             {
-                                string htmlCode = client.DownloadString(link);
-                                HtmlDocument itemPageDocument = new HtmlDocument();
-                                itemPageDocument.LoadHtml(htmlCode);
-                                slot = itemPageDocument.DocumentNode.SelectSingleNode("//*[contains(@class,'item-slot')]").InnerText;
-                                itemCollection.Add(name, slot);
+                                try
+                                {
+                                    string htmlCode = client.DownloadString(link);
+                                    HtmlDocument itemPageDocument = new HtmlDocument();
+                                    itemPageDocument.LoadHtml(htmlCode);
+                                    slot = itemPageDocument.DocumentNode.SelectSingleNode("//*[contains(@class,'item-slot')]").InnerText;
+                                    itemCollection.Add(name, slot);
+                                }
+                                catch
+                                {
+                                    // ignored
+                                }
                             }
                         }
                     }
